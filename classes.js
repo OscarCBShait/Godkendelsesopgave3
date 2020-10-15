@@ -23,3 +23,10 @@ class image {
         this.width = width;
         this.height = height;
 }}
+
+Visa = new creditcard('Mads Hansen', 701, 631723789061, 10/21);
+MadsInterest = new interest('Soccer', 'Gaming', 'Family Guy');
+MadsMatch = new match('Sandra', 'Lanette', 'Mille');
+MadsPicture = new image(100, 200);
+
+console.log(Visa, MadsInterest, MadsMatch, MadsPicture);
