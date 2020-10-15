@@ -5,6 +5,7 @@ class creditcard {
     this.Cardnumber = Cardnumber;
     this.ExpiryDate = ExpiryDate;
 }
+// Nedenfor har jeg illustreret en af funktionerne indenfor vores class for CreditCard
 pay(){
     //pay function
 }

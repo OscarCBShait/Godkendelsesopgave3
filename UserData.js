@@ -9,7 +9,14 @@ class User{
         this.Match = Match;
         this.Image = Image;
     }
+    //Nedenfor ses en af funktionerne/operationerne, som vores User Classes kan udføre
+    SwipeLeftOrRight(){
+
+    }
 }
+
+
+
 // i PaymentUser har vi tilføjet creditcard
 class PaymentUser extends User{ 
     constructor(Name, Birthday, Gender, Interest, Match, Image, CreditCard){
@@ -33,3 +40,4 @@ let ArrayUser = [newuser1, newuser2];
 
 // module.exports gør, at vi kan eksportere vores array, og anvende det i andre js.filer
 module.exports = ArrayUser
+
