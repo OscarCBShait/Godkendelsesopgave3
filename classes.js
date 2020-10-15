@@ -4,7 +4,11 @@ class creditcard {
     this.CVC = CVC;
     this.Cardnumber = Cardnumber;
     this.ExpiryDate = ExpiryDate;
-}}
+}
+pay(){
+    //pay function
+}
+}
 class interest {
     constructor(Sport, Hobby, FavoriteShow){
     this.Sport = Sport;
