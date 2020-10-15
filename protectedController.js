@@ -10,7 +10,7 @@ function loginController(req, res) {
             res.sendStatus(403); // HTTP 403 er en HTTP statuskode, som betyder, at der ikke er adgang til den ønskede ressource ("Forbidden")
         } else{
             res.json({
-                msg: "Det her er beskyttet",
+                msg: "GDPR virker",
                 data: data
             })
         }

@@ -1,7 +1,6 @@
 
 function ensureToken(req, res, next){
     const header = req.headers["authorization"]
-    console.log(header)
     if (header == undefined){
         res.sendStatus(403)
     } else{
