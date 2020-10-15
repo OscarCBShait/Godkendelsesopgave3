@@ -3,7 +3,7 @@ class creditcard {
     this.Cardholder = Cardholder;
     this.CVC = CVC;
     this.Cardnumber = Cardnumber;
-    this.ExpiryDate;
+    this.ExpiryDate = ExpiryDate;
 }}
 class interest {
     constructor(Sport, Hobby, FavoriteShow){
