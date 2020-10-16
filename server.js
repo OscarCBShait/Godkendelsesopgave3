@@ -8,19 +8,18 @@ app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 app.use(cors());
 
+// Vores JWT-token code starter her
 // her definerer vi vores tre variabler, som skal indgå i vores Token authorization. Funktionerne henter de eksporterede moduler fra hver fil
 const userController = require("../Godkendelsesopgave3server/userController")
 const protectedController = require('../Godkendelsesopgave3server/Protectedcontroller')
 const loginController = require('../Godkendelsesopgave3server/logincontroller')
-
 //henter middleware
 const ensureToken = require("../Godkendelsesopgave3server/Middleware/ensureToken");
-const ArrayUser = require("../Godkendelsesopgave3server/UserData");
-
 app.get("/", userController);
 app.get("/protect", ensureToken, protectedController);
 app.post("/login", loginController);
 
+const ArrayUser = require("../Godkendelsesopgave3server/UserData");
 
 // GET REQUEST = User // GET/read bruges til at læse ressourcer i vores REST-enviroment. GET request ændrer aldrig på informationen, men henter den blot
 app.get('/users', (req, res) => { // denne skal bruges til User
