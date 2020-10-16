@@ -1,12 +1,11 @@
 
-// require funktionen tillader at vi kan hente data fra andre JS-filer
-const cors = require("cors");
-const express = require("express");
+// Her har vi oprettet vores server
+const express = require("express"); //require funktionen tillader at vi kan hente data fra andre JS-filer
 const app = express();
 const port = process.env.PORT || 3000; // vi henviser til port her. Hvis ikke den kan finde en port i console.log, bruger den 3000
 app.listen(port, () => console.log(`Listening on port ${port}...`)); 
 
-app.use(cors());
+
 
 // Vores JWT-token code starter her
 // her definerer vi vores tre variabler, som skal indgå i vores Token authorization. Funktionerne henter de eksporterede moduler fra hver fil
