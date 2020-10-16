@@ -14,9 +14,6 @@ class User{
 
     }
 }
-
-
-
 // i PaymentUser har vi tilføjet creditcard
 class PaymentUser extends User{ 
     constructor(Name, Birthday, Gender, Interest, Match, Image, CreditCard){
