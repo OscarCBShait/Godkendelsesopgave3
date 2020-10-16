@@ -1,4 +1,3 @@
-
 function ensureToken(req, res, next){
     const header = req.headers["authorization"]
     if (header == undefined){

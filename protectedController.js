@@ -4,7 +4,7 @@ users = require('../Godkendelsesopgave3server/UserData')
 var jwt = require('jsonwebtoken');
 
 function loginController(req, res) {
-    //man kunne også tjekke her om token findes. 
+    
     jwt.verify(req.token, 'programming_rocks', function(err, data){
         if(err){
             res.sendStatus(403); // HTTP 403 er en HTTP statuskode, som betyder, at der ikke er adgang til den ønskede ressource ("Forbidden")

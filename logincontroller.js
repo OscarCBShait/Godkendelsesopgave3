@@ -7,7 +7,7 @@ var jwt = require('jsonwebtoken');
 // her anvender vi den funktion, som vi lavede i "protectedController"-filen. Den er importeret derfra
 function loginController(req, res) {
    
-    //Her laves en token, som dør om to timer. Vores Token skal man printe to users, hvilket fremgår af jwt.sing({users}
+    //Her laves en token, som dør om to timer. Vores Token skal  printe to users, hvilket fremgår af jwt.sing({users}
     const token = jwt.sign({users}, 'programming_rocks', { expiresIn: '2h' })
     res.json({
         token: token
